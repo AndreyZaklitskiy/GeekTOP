@@ -2,9 +2,8 @@ $(function() {
 
 	$('.logo-litera').each(function() {
 		var ths = $(this);
-		ths.html(ths.html().replace('O', '<span>O</span>'))
+		ths.html(ths.html().replace('O', '<span>O</span>'));
 	});
-
 	$('.search').click(function() {
 		$('.search-field').stop().slideToggle();
 		$('.search-field input[type=text]').focus();
@@ -19,7 +18,7 @@ $(function() {
 	$('.search-wrap').click(function(e){
 		e.stopPropagation();
 	});
-
+	
 	$('.top-line').after('<div class="mobile-menu d-lg-none"></div>');
 	$('.top-menu').clone().appendTo('.mobile-menu');
 	$('.mobile-menu-button').click(function(){
